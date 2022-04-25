@@ -105,6 +105,9 @@ run().catch(console.dir);
 app.get("/", (req, res) => {
   res.send("server is running");
 });
+app.get("/hero", (req, res) => {
+  res.send("Hero is running");
+});
 
 app.listen(port, () => {
   console.log("CRUD is Running", port);
